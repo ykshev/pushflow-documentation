@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Pushflow документация',
   tagline: 'Собирай пуш-подписки с pushflow',
-  url: 'https://pushflow.com/docs/',
-  baseUrl: '/',
+  url: 'https://pushflow.com/',
+  baseUrl: '/docs/',
   favicon: 'https://pushflow.net/favicon.svg',
   organizationName: 'pushflow', // Usually your GitHub org/user name.
   projectName: 'pushflow', // Usually your repo name.
@@ -110,7 +110,8 @@ module.exports = {
       {
         docs: {
           // homePageId: 'quickstart',
-          routeBasePath: '/',
+
+          routeBasePath: '',
           homePageId: 'en/quickstart',
           sidebarPath: require.resolve('./sidebars.js'),
         },
