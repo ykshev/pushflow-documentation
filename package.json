@@ -1,6 +1,6 @@
 {
-  "name": "docsru",
-  "version": "0.0.0",
+  "name": "Pushflow.net docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -15,6 +15,11 @@
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "shipit-cli": "^5.3.0",
+    "shipit-deploy": "^5.3.0",
+    "shipit-shared": "^4.4.2"
   },
   "browserslist": {
     "production": [
