@@ -2,12 +2,12 @@
 title: Useful tips and scripts
 ---
 
-## Request a furlough subscription before we go to an offshore operation from boarding
+## Requested push subscription before moving to an offer with prelanding
 ***Scenario:*** 
-The user has reached the end of your listing, clicks on the final button to go to the Offer and he will be prompted to subscribe. Regardless of which option he chooses, he will redirect to your account.
+The user has reached the end of your landing page, clicks on the final button to go to the offer, and a push subscription request window appears. Regardless of which option they choose, they are redirected to your offer.
 
-***Release:*** 
-Create a Feed in Pushflow and in the section "Setting up redirections" in each field specify a link to your offline, for example, if your Binom tracker will have a view link in each field: ``http://trackdomain.com/click.php?lp=1``. We will save and integrate the generated script according to the instructions.
+***Implementation:*** 
+Create a Feed in Pushflow and in the "redirect settings" section, specify a link to your offer in each field. for example, if your tracker is Binom, then each field will contain a link like ` " `http://trackdomain.com/click.php?lp=1``. Save and integrate the generated script [according to the standard instructions](feed_collect.md).
 
 In ```<head></head>``` we add the following script:
 ```
@@ -18,14 +18,14 @@ In ```<head></head>``` we add the following script:
     }
   </script>
   ```
-Next, we find the button where your link to the offer is and add it onclick event:
-  ```
+Next, find the button where your link to the offer is located and add the onclick event to it:
+```
   <a href="http://trackdomain.com/click.php?lp=1" onclick="toOffer(event)">Link</a>
-  ```
+```
 
 
-## Opening of an offer in a new tab, and in the old tab we make a request for a push subscription
-Integrate Pushflow script [by usual instruction](feed_collect.md). Then in ```<head></head>``` add the following script:
+## Open the offer in a new tab, and make a push subscription request in the old one
+Integrating the Pushflow script [according to the standard instructions](feed_collect.md). Next in ``<head></head>`` adding the following script:
 ```
   <script>
     // Change it to your offer link
@@ -50,9 +50,9 @@ Integrate Pushflow script [by usual instruction](feed_collect.md). Then in ```<h
     };
   </script>
 ```
-In the script, change ```https://trackdomain.com/click.php?lp=1``` to your link to the Offer.
+In the script, change ``https://trackdomain.com/click.php?lp=1`` to your link to the offer.
 
-It is also possible that the user will forget the old tab for a long time and then the script may not work. We can set the user a cookie for 31 days. Then the final script will look like this:
+It may also be that the user will forget about the old tab for a long time and then the script may not work. We can set the user a cookie for 31 days. Then the final script will look like this:
 ```
   <script>
     // Change it to your offer link
@@ -100,7 +100,7 @@ Where ```https://link.com/index.php``` should be replaced with a link to the pag
 ***Scenario:*** 
 If a user has already visited your site, they are immediately prompted to subscribe.
 
-***Realization:*** 
+***Implementation:*** 
 Create Feed in Pushflow. If you want to leave all fields in the redirection section empty after the action with the subscription window. Integrate the Pushflow script [following the usual instructions](feed_collect.md).
 
 If you want to ask for a subscription from users who have left your publishing to the offshore and not just visited the page, add the following script to ```<head></head>`:
@@ -164,7 +164,7 @@ In this case, no additional scripts should be added to the button to go to the o
 ***Scenario:*** 
 We want the subscription script to trigger only if there is some key in the URL of the page, for example ```&p=1```. This can be useful during tests with and without a subscription, just take a double of the link in the tracker and add ```&p=1``` to it. Now you will see a subscription window in this branding and not a keyless one.
 
-***Realization:*** 
+***Implementation:*** 
 Integrate the Pushflow script [following the usual instructions](feed_collect.md). Next, in the integrated script we find the line ``` function PushflowSDK.askSubscription() {``` and below it we add the following condition ```if (window.location.href.indexOf('&p=1') < 0) return;```. As a result, we get the script of the view:
 ```
   ...
