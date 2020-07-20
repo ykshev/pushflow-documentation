@@ -11,6 +11,7 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
     "@docusaurus/plugin-content-docs": "^2.0.0-alpha.37",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-alpha.37",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "clsx": "^1.1.1",
     "react": "^16.8.4",

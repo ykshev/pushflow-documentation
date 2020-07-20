@@ -6,7 +6,50 @@ module.exports = {
   favicon: 'https://pushflow.net/favicon.svg',
   organizationName: 'pushflow', // Usually your GitHub org/user name.
   projectName: 'pushflow', // Usually your repo name.
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          // homePageId: 'quickstart',
+
+          routeBasePath: '',
+          homePageId: 'en/quickstart',
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        blog: {
+          showReadingTime: true,
+          path: './blog/ru',
+          routeBasePath: '/blog/ru', // Set this value to '/'.
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Pushflow.net`,
+          },
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+  plugins: [
+    '@docusaurus/plugin-google-gtag',
+
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        routeBasePath: '/blog/en',
+        path: './blog/en',
+      },
+    ],
+  ],
+
   themeConfig: {
+    gtag: {
+      trackingID: 'GTM-5ZZCBLK',
+      // Optional fields.
+      // anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
       // title: 'Docs',
       logo: {
@@ -15,29 +58,41 @@ module.exports = {
       },
       links: [
         {
-          to: '/',
+          // to: '/',
           // activeBasePath: 'en',
           label: 'In English',
           position: 'left',
+          items: [
+            {
+              to: '/',
+              activeBasePath: '/',
+              label: 'Documentation',
+            },
+            {
+              to: 'blog/en',
+              // activeBasePath: 'glaze/overview',
+              label: 'Blog',
+            },
+          ],
         },
         {
 
           label: 'По-русски',
           position: 'left',
-          to: 'ru/quickstart',
-          activeBasePath: 'ru',
-          // items: [
-          //   {
-          //     to: 'ru/quickstart',
-          //     activeBasePath: 'ru',
-          //     label: 'Документация',
-          //   },
-          //   {
-          //     to: 'blog',
-          //     // activeBasePath: 'glaze/overview',
-          //     label: 'Блог',
-          //   },
-          // ],
+          // to: 'ru/quickstart',
+          // activeBasePath: 'ru',
+          items: [
+            {
+              to: 'ru/quickstart',
+              activeBasePath: 'ru',
+              label: 'Документация',
+            },
+            {
+              to: 'blog/ru',
+              // activeBasePath: 'glaze/overview',
+              label: 'Блог',
+            },
+          ],
         },
 
         {
@@ -104,26 +159,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Pushflow.`,
     },
   },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          // homePageId: 'quickstart',
 
-          routeBasePath: '',
-          homePageId: 'en/quickstart',
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+
 
 };
