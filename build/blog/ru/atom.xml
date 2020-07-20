@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pushflow.com/blog/ru</id>
+    <title>Pushflow документация Blog</title>
+    <updated>2020-07-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pushflow.com/blog/ru"/>
+    <subtitle>Pushflow документация Blog</subtitle>
+    <icon>https://pushflow.com/https://pushflow.net/favicon.svg</icon>
+    <rights>Copyright © 2020 Pushflow.net</rights>
+    <entry>
+        <title type="html"><![CDATA[Оцениваем качество трафика и ловим ботов при помощи Javascript]]></title>
+        <id>score-traffic-quality</id>
+        <link href="https://pushflow.com/docs/blog/ru/score-traffic-quality"/>
+        <updated>2020-07-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Оценка качества трафика поможет нам отсекать мусорные источники трафика и площадки без необходимости тратить деньги на их полноценный тест. В данной статье мы покажем скрипты, которые используем для оценки качества трафика и понимания заинтересованности аудитории в вашем прилендинге. Для распределения трафика мы будем использовать Binom и его систему событий. Если вы используете другой трэкер, то наверняка в нем есть похожий функционал и вы легко сможете взять принципы из статьи и адаптировать под ваш трэкер.]]></summary>
+    </entry>
+</feed>
