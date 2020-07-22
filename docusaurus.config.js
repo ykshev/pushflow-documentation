@@ -33,7 +33,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    '@docusaurus/plugin-google-gtag',
+    // '@docusaurus/plugin-google-gtag',
 
     [
       '@docusaurus/plugin-content-blog',
@@ -45,11 +45,12 @@ module.exports = {
   ],
 
   themeConfig: {
-    gtag: {
-      trackingID: 'GTM-5ZZCBLK',
-      // Optional fields.
-      // anonymizeIP: true, // Should IPs be anonymized?
-    },
+    image: 'https://pushflow.net/image/png/og-pushflow.png',
+    // gtag: {
+    //   trackingID: 'GTM-5ZZCBLK',
+    //   // Optional fields.
+    //   // anonymizeIP: true, // Should IPs be anonymized?
+    // },
     navbar: {
       // title: 'Docs',
       logo: {

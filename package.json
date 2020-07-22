@@ -15,7 +15,8 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-gtm-module": "^2.0.10"
   },
   "devDependencies": {
     "shipit-cli": "^5.3.0",

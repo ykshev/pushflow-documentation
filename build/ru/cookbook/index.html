@@ -5,25 +5,22 @@
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
 <link rel="alternate" type="application/rss+xml" href="/docs/blog/ru/rss.xml" title="Pushflow документация Blog RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/docs/blog/ru/atom.xml" title="Pushflow документация Blog Atom Feed">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5ZZCBLK"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","GTM-5ZZCBLK",{})</script>
-<link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5ZZCBLK"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","GTM-5ZZCBLK")</script><title data-react-helmet="true">Полезные советы и скрипты | Pushflow документация</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Полезные советы и скрипты | Pushflow документация"><meta data-react-helmet="true" name="description" content="Запрашиваем пуш-подписку перед переходом на оффер с прилендинга"><meta data-react-helmet="true" property="og:description" content="Запрашиваем пуш-подписку перед переходом на оффер с прилендинга"><meta data-react-helmet="true" property="og:url" content="https://pushflow.net/docs/ru/cookbook"><link data-react-helmet="true" rel="shortcut icon" href="https://pushflow.net/favicon.svg"><link data-react-helmet="true" rel="canonical" href="https://pushflow.net/docs/ru/cookbook"><link rel="stylesheet" href="/docs/styles.05c9c65b.css">
-<link rel="preload" href="/docs/styles.354b320d.js" as="script">
-<link rel="preload" href="/docs/runtime~main.05b9d171.js" as="script">
-<link rel="preload" href="/docs/main.f36d8045.js" as="script">
-<link rel="preload" href="/docs/1.fe1c7f39.js" as="script">
-<link rel="preload" href="/docs/2.08627730.js" as="script">
-<link rel="preload" href="/docs/45.30e83a39.js" as="script">
-<link rel="preload" href="/docs/46.aed12cb9.js" as="script">
-<link rel="preload" href="/docs/20ac7829.9d68bd58.js" as="script">
-<link rel="preload" href="/docs/17896441.6b5a7509.js" as="script">
-<link rel="preload" href="/docs/004415c9.b18a7770.js" as="script">
+<link rel="alternate" type="application/atom+xml" href="/docs/blog/ru/atom.xml" title="Pushflow документация Blog Atom Feed"><title data-react-helmet="true">Полезные советы и скрипты | Pushflow документация</title><meta data-react-helmet="true" property="og:locale" content="en_US"><meta data-react-helmet="true" property="og:type" content="article"><meta data-react-helmet="true" property="fb:app_id" content="726250024839333"><meta data-react-helmet="true" property="og:image" content="https://pushflow.net/image/png/og-pushflow.png"><meta data-react-helmet="true" property="twitter:image" content="https://pushflow.net/image/png/og-pushflow.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for Pushflow документация"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Полезные советы и скрипты | Pushflow документация"><meta data-react-helmet="true" name="description" content="Запрашиваем пуш-подписку перед переходом на оффер с прилендинга"><meta data-react-helmet="true" property="og:description" content="Запрашиваем пуш-подписку перед переходом на оффер с прилендинга"><meta data-react-helmet="true" property="og:url" content="https://pushflow.net/docs/ru/cookbook"><link data-react-helmet="true" rel="shortcut icon" href="https://pushflow.net/favicon.svg"><link data-react-helmet="true" rel="canonical" href="https://pushflow.net/docs/ru/cookbook"><link rel="stylesheet" href="/docs/styles.05c9c65b.css">
+<link rel="preload" href="/docs/styles.ee07dd3d.js" as="script">
+<link rel="preload" href="/docs/runtime~main.d2ad6cbb.js" as="script">
+<link rel="preload" href="/docs/main.641223c9.js" as="script">
+<link rel="preload" href="/docs/1.9dac7340.js" as="script">
+<link rel="preload" href="/docs/2.ed792b01.js" as="script">
+<link rel="preload" href="/docs/01a85c17.275ab557.js" as="script">
+<link rel="preload" href="/docs/1be78505.9c3ae807.js" as="script">
+<link rel="preload" href="/docs/6875c492.4ef2a226.js" as="script">
+<link rel="preload" href="/docs/a6aa9e1f.8de27fe1.js" as="script">
+<link rel="preload" href="/docs/ccc49370.d8d47725.js" as="script">
+<link rel="preload" href="/docs/47.f3f9b9f2.js" as="script">
+<link rel="preload" href="/docs/46.d36d0425.js" as="script">
+<link rel="preload" href="/docs/20ac7829.bfb2b59a.js" as="script">
+<link rel="preload" href="/docs/17896441.bc357879.js" as="script">
+<link rel="preload" href="/docs/004415c9.113a3821.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -41,15 +38,20 @@ Cоздайте Фид в Pushflow. Если хотите, чтобы после
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  function setNonUniqCookeie() {</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    document.cookie = &quot;isNonUniq=1; max-age=&quot; + 60 * 60 * 24 * 31 + &quot; ; path=/&quot;;</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  };</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  function getCookie(name) {</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    var matches = document.cookie.match(new RegExp(&quot;(?:^|; )&quot; + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, &#x27;\\$1&#x27;) + &quot;=([^;]*)&quot;));</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    return matches ? decodeURIComponent(matches[1]) : undefined;</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  };</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">&lt;/script&gt;</span></div></div></div></div></div><p>В таком случае никаких дополнительных скриптов на кнопку перехода на оффер добавлять не нужно.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/ru/feed_carosule"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Настройка карусели редиректов</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/ru/tracker"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Настройка трэкера, постбэков, макросов »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#запрашиваем-пуш-подписку-перед-переходом-на-оффер-с-прилендинга" class="table-of-contents__link">Запрашиваем пуш-подписку перед переходом на оффер с прилендинга</a></li><li><a href="#открываем-оффер-в-новой-вкладке-а-в-старой-производим-запрос-пуш-подписки" class="table-of-contents__link">Открываем оффер в новой вкладке, а в старой производим запрос пуш-подписки</a></li><li><a href="#подписываем-неуникальных-пользователей" class="table-of-contents__link">Подписываем неуникальных пользователей</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 Pushflow.</div></div></div></footer></div>
-<script src="/docs/styles.354b320d.js"></script>
-<script src="/docs/runtime~main.05b9d171.js"></script>
-<script src="/docs/main.f36d8045.js"></script>
-<script src="/docs/1.fe1c7f39.js"></script>
-<script src="/docs/2.08627730.js"></script>
-<script src="/docs/45.30e83a39.js"></script>
-<script src="/docs/46.aed12cb9.js"></script>
-<script src="/docs/20ac7829.9d68bd58.js"></script>
-<script src="/docs/17896441.6b5a7509.js"></script>
-<script src="/docs/004415c9.b18a7770.js"></script>
+<script src="/docs/styles.ee07dd3d.js"></script>
+<script src="/docs/runtime~main.d2ad6cbb.js"></script>
+<script src="/docs/main.641223c9.js"></script>
+<script src="/docs/1.9dac7340.js"></script>
+<script src="/docs/2.ed792b01.js"></script>
+<script src="/docs/01a85c17.275ab557.js"></script>
+<script src="/docs/1be78505.9c3ae807.js"></script>
+<script src="/docs/6875c492.4ef2a226.js"></script>
+<script src="/docs/a6aa9e1f.8de27fe1.js"></script>
+<script src="/docs/ccc49370.d8d47725.js"></script>
+<script src="/docs/47.f3f9b9f2.js"></script>
+<script src="/docs/46.d36d0425.js"></script>
+<script src="/docs/20ac7829.bfb2b59a.js"></script>
+<script src="/docs/17896441.bc357879.js"></script>
+<script src="/docs/004415c9.113a3821.js"></script>
 </body>
 </html>
