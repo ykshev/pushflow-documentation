@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Pushflow документация',
   tagline: 'Собирай пуш-подписки с pushflow',
-  url: 'https://pushflow.com/',
+  url: 'https://pushflow.com',
   baseUrl: '/docs/',
   favicon: 'https://pushflow.net/favicon.svg',
   organizationName: 'pushflow', // Usually your GitHub org/user name.
