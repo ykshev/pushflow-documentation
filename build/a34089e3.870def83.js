@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{130:function(o){o.exports=JSON.parse('{"allTagsPath":"/docs/blog/ru/tags","slug":"binom","name":"binom","count":1,"permalink":"/docs/blog/ru/tags/binom"}')}}]);
