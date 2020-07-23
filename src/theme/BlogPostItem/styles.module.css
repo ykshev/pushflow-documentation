@@ -12,3 +12,11 @@
 .blogPostDate {
   font-size: 0.9rem;
 }
+
+.blogPostSignup {
+  display: block;
+  padding: 24px;
+  background-color: var(--ifm-code-background);
+  border-radius: var(--ifm-code-border-radius);
+  color: var(--ifm-code-color);
+}

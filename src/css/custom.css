@@ -25,7 +25,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', var(--ifm-font-family-base);
   color: var(--ifm-font-color-black);
 }
 
@@ -40,4 +40,9 @@ html {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar__title {
+  font-weight: 500;
+  opacity: 0.5;
 }

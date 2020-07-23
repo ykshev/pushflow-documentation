@@ -99,7 +99,24 @@ function BlogPostItem(props) {
       </header>
     );
   };
-
+  const isRu = permalink && permalink.includes('ru');
+  const renderSignup = () => {
+    if (isRu) {
+      return <div className={clsx('margin-top--xl', styles.blogPostSignup)}>
+        {/* <img src={useBaseUrl('/img/handbg.svg')} /> */}
+        <h2>Регистрируйся в Pushflow</h2>
+        <p>Pushflow помогает арбитражникам и вебмастерам собирать свою базу пуш уведомлений</p>
+        <a href="/app/signup" className="button button--primary">Попробуй 14 дней бесплатно</a>
+      </div>
+    } else {
+      return <div className={clsx('margin-top--xl', styles.blogPostSignup)}>
+        {/* <img src={useBaseUrl('/img/handbg.svg')} /> */}
+        <h2>Sign up</h2>
+        <p>Pushflow helps affiliates and webmasters build their own push notification database</p>
+        <a href="/app/signup" className="button button--primary">Try 14 days for free</a>
+      </div>
+    }
+  }
   return (
     <>
       <Head>
@@ -112,9 +129,8 @@ function BlogPostItem(props) {
           <meta property="og:url" content={siteUrl + permalink} />
         )}
         {permalink && <link rel="canonical" href={siteUrl + permalink} />}
-        {permalink && permalink.includes('ru') ? <html lang="ru" /> : <html lang="en" />}
-        {permalink && permalink.includes('ru') ? <meta property="og:locale" content="ru_RU" />
-          : <meta property="og:locale" content="en_US" />}
+        {isRu ? <html lang="ru" /> : <html lang="en" />}
+        {isRu ? <meta property="og:locale" content="ru_RU" /> : <meta property="og:locale" content="en_US" />}
       </Head>
 
       <article className={!isBlogPostPage ? 'margin-bottom--xl' : undefined}>
@@ -148,6 +164,7 @@ function BlogPostItem(props) {
             )}
           </footer>
         )}
+        {isBlogPostPage && renderSignup()}
       </article>
     </>
   );

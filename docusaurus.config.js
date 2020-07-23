@@ -52,7 +52,7 @@ module.exports = {
     //   // anonymizeIP: true, // Should IPs be anonymized?
     // },
     navbar: {
-      // title: 'Docs',
+      title: 'Docs',
       logo: {
         alt: 'Pushflow Logo',
         src: 'img/logo.svg',
@@ -105,7 +105,7 @@ module.exports = {
         // { to: 'blog', label: 'Блог', position: 'right' },
         {
           href: 'https://pushflow.net/app/',
-          label: 'Back to Pushflow',
+          label: 'Back to Pushflow app',
           position: 'right',
         },
       ],
