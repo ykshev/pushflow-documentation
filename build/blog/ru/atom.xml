@@ -7,7 +7,7 @@
     <link rel="alternate" href="https://pushflow.net/blog/ru"/>
     <subtitle>Pushflow документация Blog</subtitle>
     <icon>https://pushflow.net/https://pushflow.net/favicon.svg</icon>
-    <rights>Copyright © 2020 Pushflow.net</rights>
+    <rights>Copyright © 2021 Pushflow.net</rights>
     <entry>
         <title type="html"><![CDATA[Оцениваем качество трафика и ловим ботов при помощи Javascript]]></title>
         <id>score-traffic-quality</id>

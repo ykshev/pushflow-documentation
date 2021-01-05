@@ -7,7 +7,7 @@
         <lastBuildDate>Sat, 18 Jul 2020 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <copyright>Copyright © 2020 Pushflow.net</copyright>
+        <copyright>Copyright © 2021 Pushflow.net</copyright>
         <item>
             <title><![CDATA[Оцениваем качество трафика и ловим ботов при помощи Javascript]]></title>
             <link>https://pushflow.net/docs/blog/ru/score-traffic-quality</link>
