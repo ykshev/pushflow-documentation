@@ -23,3 +23,9 @@ While creating your creativity, you can add additional macros to the link, trans
 - ```{feedId}``` — Feed ID in Pushflow
 - ```{subscriptionId}``` — Subscription ID in Pushflow
 - ```{days}``` — Number of days since the subscription occurred
+- ```{clickid}``` — clickid token received from the subscription page
+- ```{t1}``` — t1 token received from the subscription page
+- ```{t2}``` — t2 token received from the subscription page
+- ```{t3}``` — t3 token received from the subscription page
+- ```{t4}``` — t4 token received from the subscription page
+- ```{t5}``` — t5 token received from the subscription page
