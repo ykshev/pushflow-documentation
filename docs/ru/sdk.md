@@ -7,10 +7,10 @@ title: Настройка скрипта (SDK)
 
 #### Pushflow.init() options:
 ```
-PushflowSDK.init({
+var pushflowSettings = {
   failedUrl: "https://failedurl.com",
   allowUrl: "https://allowUrl.com",
-  denyUrls: ["https://denyUrls.com", "https://1.denyUrls.com", "https://2.denyUrls.com"],
+  denyUrls: ["denyUrls.com", "1.denyUrls.com", "2.denyUrls.com"],
   vapidPublic: "vapidpublic",
   feedId: "1",
   subscribeOnPageLoad: false,
@@ -49,5 +49,5 @@ PushflowSDK.init({
       delay: 500
     }
   }
-});
+};
 ```
