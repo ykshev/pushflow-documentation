@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Сбор подписок',
-      items: ['ru/feed', 'ru/feed_collect', 'ru/sdk', 'ru/feed_carosule', 'ru/cookbook'],
+      items: ['ru/feed', 'ru/feed_collect', 'ru/sdk', 'ru/feed_carosule', 'ru/cookbook', 'ru/pricing'],
       collapsed: false
     },
     {
@@ -25,7 +25,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Collecting subscriptions',
-      items: ['en/feed', 'en/feed_collect', 'en/sdk', 'en/feed_carosule', 'en/cookbook'],
+      items: ['en/feed', 'en/feed_collect', 'en/sdk', 'en/feed_carosule', 'en/cookbook', 'en/pricing'],
       collapsed: false
     },
     {
