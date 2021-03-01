@@ -20,6 +20,12 @@ var pushflowSettings = {
   onFailedCallback: function() {},
   onDeniedCallback: function() {},
   workerPath: "/sw-pushflownet.js",
+  clickid: "123456",
+  t1: "123456",
+  t2: "123456",
+  t3: "123456",
+  t4: "123456",
+  t5: "123456",
   widgets: {
     isShowRobot: false,
     isShowDialog: false,
