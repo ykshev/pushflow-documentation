@@ -1,22 +1,21 @@
 ---
-title: Setting up the tracker, postbacks, macros
+title: Setting up the tracker, postback, macros
 ---
 
 
-## Postback to collect subscriptions
-When collecting subscriptions to [Feed](feed.md) you have the option of getting post-back from the click ID in which the subscription took place to count it as a conversion in the tracker.
+## Postback when collecting subscriptions
+When collecting push subscriptions, you can pass your click ID, and after a successful subscription, you can receive a callback to your tracker software with the passed click ID. You can also transfer ```t1, t2, t3, t4, t5``` tokens that you can use later when sending push notifications to this user.
 
 
-**What it takes:**
-1. **Send the token to the URL of the page where the subscription is collected**.  The script will automatically pass the values of available tokens (```clickid, t1, t2, t3, t4, t5```) along with a successful subscription to our service. For example, if you want to pass an idi click and then get it to your tracker with the postback, you need to pass an idi click from the tracker to the token ```clickid```. As a result, the final URL where subscriptions are collected should look like this: ```https://script-domain.com/index.php?clickid=8280816987&t1=propellers&t2=dating```
-1. **Place the postback URL on Pushflow**:
-  - On the Feed page. Will only apply to a given Feed.
-  - In global [Pushflow profile settings](https://pushflow.net/app/options). Will apply to all Feeds where no postback url is set.
+**How it works:**
+1. **Transfer tokens with a subscription. To pass tokens, they must be in the URL of the page where subscriptions are collected.**.  The script will automatically get available tokens from the URL (```clickid, t1, t2, t3, t4, t5```) and pass it with a successful subscription to our server. For example, if you want to pass ```clickid, t1, t2``` the URL could be like this: ```https://script-domain.com/index.php?clickid=8280816987&t1=propellers&t2=dating```
+1. **To get them back, add a postback URL on Pushflow**:
+  - You can add a callback on the feed page and it will only apply to that feed.
+  - Or you can add a global postback in [Pushflow profile settings](https://pushflow.net/app/options). It will apply to all feeds that don't have a postback URL.
 
-  In reverse postback you can use one of the previously passed macros to return this information to your tracker: ```{clickid}, {t1}, {t2}, {t3}, {t4}, {t5}```(255 symbols max).  For example, for a Binom tracker it would look like this: ```https://your-tracker.com/click.php?cnv_id={clickid}&t1={t1}&t2={t2}```
 
 ## Macros when sending notifications
-While creating your creativity, you can add additional macros to the link, transmitting values from the Pushflow system. You can create a traffic source in your tracker with the following macros:
+During creative creation, you can add additional macros to a link that pass values that you passed along with the push subscription and from the Pushflow system:
 - ```{externalId}``` — Click ID in Pushflow
 - ```{сampaignId}``` — Campaign ID in Pushflow
 - ```{creativeId}``` — Creative ID in Pushflow
