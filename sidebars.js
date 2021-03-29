@@ -10,7 +10,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Интеграции',
-      items: ['ru/tracker'],
+      items: ['ru/tracker', 'ru/binom'],
       collapsed: false
     },
     // {
@@ -31,7 +31,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Integrations',
-      items: ['en/tracker'],
+      items: ['en/tracker', 'en/binom'],
       collapsed: false
     },
     // {
